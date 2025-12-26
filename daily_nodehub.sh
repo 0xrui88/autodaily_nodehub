@@ -11,6 +11,10 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 
 TOKEN_FILE="/root/nodehub_token"
+# 只在有终端的情况下清屏
+if [ -t 1 ]; then
+    clear
+fi
 
 clear
 echo -e "${BLUE}================================================"
